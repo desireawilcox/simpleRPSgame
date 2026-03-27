@@ -1,0 +1,32 @@
+body {
+    background-color: pink;
+    color: white;
+    text-align: center;
+
+}
+.btn{
+    height: 100px;
+    width: 100px;
+    border-radius:5px;
+    background-size: 100px 100px;
+    cursor: pointer;
+    background-position: center;
+    background-color: white;
+    transition: box-shadow 0.3s ease transform 0.2s ease;
+
+}
+
+.btn:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.btn-rock {
+    background-image: url('/static/images/rock.png');
+}
+.btn-paper{
+    background-image: url('/static/images/paper.png')
+}
+.btn-scissors{
+    background-image: url('/static/images/scissors.png')
+}

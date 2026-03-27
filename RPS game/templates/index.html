@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <form method='POST'>
+        <button class = "btn btn-rock" name = 'choice' value = 'rock'></button>
+        <button class = "btn btn-paper" name = 'choice' value = 'paper'></button>
+        <button class = "btn btn-scissors" name = 'choice' value = 'scissors'></button>
+    </form>
+    {% if result %}
+        <p>Computer Choice: {{opp}}</p>
+        <h2>{{result}}</h2>
+    {% else %}
+        <p>Make your Move!</p>
+    {% endif %}
+
+    <h3>Score</h3>
+    <p>User: {{userScore}}| Computer: {{compScore}}</p>
+
+</body>
+</html>
